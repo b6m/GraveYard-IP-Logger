@@ -1,5 +1,5 @@
 from assets.ip import 一
 
 一(
-    webhook="WEBHOOK"
-    )
+    "OH MY GOD WEBHOOK GOES HERE SDFKASLDJKLKJNASDJLKDAS"
+)
